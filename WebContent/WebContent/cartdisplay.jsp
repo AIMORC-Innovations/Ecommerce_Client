@@ -267,9 +267,9 @@ let casualWearData = responseData[3];
 if (data == '{}')
 {
 $('#page').hide();
-var textMore = "No items in cart";
 
-$('#Noitem').append(textMore).css({"justify-content": "center","color":"red","font-size":"70px"}).show().hide(3000);
+
+$('#Noitem').show();
 }
 
 console.log("westernWearData is" + westernWearData);
@@ -692,10 +692,9 @@ window.location.href = "cartdisplay.jsp";
 		</div>
 	</form>
 
-	<div class="alert alert-success" role="alert" id="Noitem" style="align-items:center; display:none">
-
-</div>
-
+ <div class="alert alert-primary col-md-8 mx-auto "  id="Noitem" style="display:none; margin-top:80px; border-color: #004d80;">
+	<light class="text-center "style="text-align:center; font-size:70px;">No Item In Cart <i class="fa fa-exclamation-triangle"></i></light>
+	</div> 
 
 </body>
 </html>
